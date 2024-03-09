@@ -1,0 +1,28 @@
+<div>
+    <h2>Employee List</h2>
+    <table class="custom-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Total Time in Month</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let employee of employees" [ngClass]="{'highlighted-row': employee.totalWorkingHours < 100}">
+                <td>{{ employee._id}}</td>
+                <td>{{ getIntegerPart(employee.totalWorkingHours) }} hrs</td>
+                <td> <a href=""> Edit </a> </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<hr>
+
+<h2>Working Hours Piechart</h2>
+    <div class="chart-container">
+        <canvas id="MyChart">{{ chart }}</canvas>
+    </div>
+
+

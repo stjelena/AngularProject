@@ -1,0 +1,17 @@
+.custom-table {
+    border-collapse: collapse; /* Collapse borders to avoid double borders */
+    width: 100%;
+  }
+  
+  .custom-table th, .custom-table td {
+    border: 1px solid grey; /* Grey borders */
+    padding: 8px; /* Add padding for better spacing */
+  }
+  
+  .custom-table th {
+    background-color: lightgrey; /* Grey background for title */
+  }
+
+  .highlighted-row {
+    background-color: #ffcccc; /* Light red background for highlighted rows */
+  }
